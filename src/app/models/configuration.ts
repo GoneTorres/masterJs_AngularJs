@@ -2,5 +2,5 @@ export let Configuration = {
   color: 'red',
   fondo: 'blue',
   titulo: ' Aplicación con AngularJs',
-  descripcion: 'Aprendiendo Angular en chancletas',
+  descripcion: 'Aprendiendo en chancletas',
 };
