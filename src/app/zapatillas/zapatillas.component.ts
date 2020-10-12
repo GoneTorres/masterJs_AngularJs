@@ -4,6 +4,7 @@ import { Zapatilla } from '../models/zapatilla';
 @Component({
   selector: 'app-zapatillas',
   templateUrl: './zapatillas.component.html',
+  styleUrls: ['./zapatillas.component.css']
 })
 export class ZapatillasComponent implements OnInit {
   public zapatillas: Array<Zapatilla>;

@@ -21,7 +21,15 @@
       [ngStyle]="{
         'text-decoration': deportiva.stock ? 'none' : 'line-through'
       }"
-      >{{ deportiva.nombre }} - <strong>${{ deportiva.precio }} </strong></span
+      >{{ deportiva.nombre }} -
+      <strong
+        [class.altoPrecio]="deportiva.precio > 120"
+        [ngClass]="{
+          fondoRojo: deportiva.precio > 130,
+          subrayado: deportiva.marca === 'Nike'
+        }"
+        >${{ deportiva.precio }}
+      </strong></span
     >
 
     <span
