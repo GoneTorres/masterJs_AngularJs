@@ -9,14 +9,9 @@ import { Configuration } from './models/configuration';
 export class AppComponent {
   public title: string;
   public descripcion: string;
-  public mostrarVideojuegos = true;
 
   constructor() {
     this.title = Configuration.titulo;
     this.descripcion = Configuration.descripcion;
-  }
-
-  ocultarVideojuegos(value): void {
-    this.mostrarVideojuegos = value;
   }
 }

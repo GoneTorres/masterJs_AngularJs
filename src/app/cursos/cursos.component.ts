@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { normalize } from 'path';
-import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-cursos',

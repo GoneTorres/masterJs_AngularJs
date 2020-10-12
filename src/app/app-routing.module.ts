@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { ExternoComponent } from './externo/externo.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'cursos', component: CursosComponent },
   { path: 'cursos/:nombre', component: CursosComponent },
   { path: 'cursos/:nombre/:apellido', component: CursosComponent },
+  { path: 'externo', component: ExternoComponent },
   { path: '**', component: HomeComponent },
 ];
 
