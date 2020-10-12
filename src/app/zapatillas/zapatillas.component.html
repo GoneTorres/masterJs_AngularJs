@@ -1,8 +1,17 @@
 <h2>{{ titulo }}</h2>
+
+<p>Añadir marca</p>
+<p>
+  <input type="text" [(ngModel)]="miMarca" (keyup.enter)="mostrarPalabra()" />
+  <button (click)="addMarcas(miMarca)">Añadir marca</button>
+</p>
+<p>{{ miMarca }}</p>
+<hr />
 <p>Compra las zapatillas de las mejores marcas</p>
 <ul>
   <li *ngFor="let marca of marcas; let indice = index">
     {{ indice }} - {{ marca }}
+    <button (click)="borrarMarca(indice)">Borrar</button>
   </li>
 </ul>
 <p>Las deportivas que tenemos disponibles son:</p>

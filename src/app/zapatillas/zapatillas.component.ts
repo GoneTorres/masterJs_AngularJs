@@ -10,8 +10,10 @@ export class ZapatillasComponent implements OnInit {
   public titulo = 'Componente de Zapatillas';
   public marcas: string[];
   public color: string;
+  public miMarca: string;
 
   constructor() {
+    this.miMarca = '';
     this.color = 'yellow';
     this.marcas = new Array();
     this.zapatillas = [
@@ -34,5 +36,20 @@ export class ZapatillasComponent implements OnInit {
       }
     });
     console.log(this.marcas);
+  }
+
+  addMarcas(marca: string): void {
+    this.marcas.push(marca);
+    this.miMarca = '';
+  }
+  borrarMarca(index: number): void {
+    this.marcas.splice(index, 1);
+  }
+
+  onBlur(): void  {
+    console.log('Haz salido del input');
+  }
+  mostrarPalabra(): void {
+    alert(this.miMarca);
   }
 }
